@@ -1,4 +1,5 @@
 import 'package:clinicapp/data/routes/app_routes.dart';
+import 'package:clinicapp/data/routes/navigation_service.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      navigatorKey: NavigationService.instance.navigatorKey,
       onGenerateRoute: AppRoutes.generateRoute,
       initialRoute: RouteName.phoneAuth,
     );
