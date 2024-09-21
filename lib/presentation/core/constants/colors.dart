@@ -6,4 +6,5 @@ class ColorConst {
   static Color unclickableColor = const Color(0XFF0E0E0E).withOpacity(0.6);
   static Color textColor = const Color(0XFF333333).withOpacity(0.9);
   static Color unSelectedColor = const Color(0XFF333333).withOpacity(0.3);
+  static Color backgroundColor = const Color.fromRGBO(0, 126, 133, 0.12);
 }
